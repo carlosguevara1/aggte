@@ -79,7 +79,8 @@ out =  aggte(out)
 ```
 
 ## Outcome
-### Simple aggregation
+
+### Group aggregation (deafult)
 ```
 Overall summary of ATT's based on group/cohort aggregation:
    ATT Std. Error  [95.0%  Conf. Int.]
@@ -96,12 +97,22 @@ Control Group:  Never Treated ,
 Anticipation Periods:  0.0
 Estimation Method:  Outcome Regression
 ```
+### Simple aggregation
+```
+  ATT Std. Error  [95.0%  Conf. Int.]  
+-0.04     0.0122 -0.0638      -0.0161 *
+
+---
+Signif. codes: `*' confidence band does not cover 0
+Control Group:  Never Treated , 
+Anticipation Periods:  0.0
+Estimation Method:  Outcome Regression
+```
 ### Dynamic aggregation
 ```
 Overall summary of ATT's based on event-study/dynamic aggregation:
     ATT Std. Error  [95.0%  Conf. Int.]  
 -0.0772     0.0204 -0.1173      -0.0372 *
-
 
 Dynamic Effects:
    Event time  Estimate  Std. Error  [95.0% Simult.   Conf. Band]   
