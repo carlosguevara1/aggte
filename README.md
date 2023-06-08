@@ -60,7 +60,7 @@ I built the Python function for aggte function of the R package (and c++) from [
     * out =  aggte(out,'group')
     * out =  aggte(out,'dynamic')
     * out =  aggte(out,'calendar')
-* Run the following script
+* Run the following script "tryal_runing_att_gt_object" that contains the following code:
 ```
 import os
 import pickle
