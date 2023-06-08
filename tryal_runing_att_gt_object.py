@@ -17,5 +17,5 @@ pickle_file = "att_gt_object.pkl"
 with open(pickle_file, "rb") as f:
     out = pickle.load(f)
     
-out =  aggte(out)
+out =  aggte(out,'dynamic')
 
