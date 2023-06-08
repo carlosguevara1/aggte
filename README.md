@@ -1,4 +1,4 @@
-<!-- https://github.com/dreampulse/computer-modern-web-font-->
+<!-- https://github.com/dreampulse/computer-modern-web-font
 <head>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
   <style>
@@ -8,7 +8,7 @@
   </style>
 </head>
 
-<!-- https://stackoverflow.com/questions/71198520/adding-computer-modern-serif-to-jekyll-github-page -->
+ https://stackoverflow.com/questions/71198520/adding-computer-modern-serif-to-jekyll-github-page 
 <!--
 <head>
     <meta charset="UTF-8" />
@@ -29,7 +29,7 @@ This code implements the Aggregate Group-Time Average Treatment Effects from the
 
 ## Description
 
-I built the Python function for aggte of the R package (and c++) from [Callaway and Sant’Anna (2021)](https://bcallaway11.github.io/did/index.html). This code is a function to take group-time average treatment effects and aggregate them into a smaller number of parameters.  There are several possible aggregations including "simple", "dynamic", "group", and "calendar.".
+I built the Python function for aggte function of the R package (and c++) from [Callaway and Sant’Anna (2021)](https://bcallaway11.github.io/did/index.html). This code is a function to take group-time average treatment effects and aggregate them into a smaller number of parameters.  There are several possible aggregations including "simple", "dynamic", "group", and "calendar.".
 
 
 ## Roadmap
@@ -43,9 +43,10 @@ I built the Python function for aggte of the R package (and c++) from [Callaway 
     - [x] Execute bootstraiping (multiplier_bootstrap)
     - [x] Clean arrays for logical vectors (TorF)
 - [x] Utils
-    - [x] (wif)
-    - [x] (get_agg_inf_func)
-    - [x] (get_se)
+    - [x] Compute influence function matrix(wif)
+    - [x] Apply influence function for parameters (get_agg_inf_func)
+    - [x] Return standard errors (get_se)
+    - [x] Print results (AGGTEobj)
 
 
 ## Getting Started
@@ -59,6 +60,7 @@ I built the Python function for aggte of the R package (and c++) from [Callaway 
     * out =  aggte(out,'group')
     * out =  aggte(out,'dynamic')
     * out =  aggte(out,'calendar')
+* Run the following script
 ```
 import os
 import pickle
